@@ -1,0 +1,16 @@
+{
+  "name": "x-child-starter",
+  "version": "1.0.0",
+  "description": "X Theme Child Theme with changes I use in every site (mostly)",
+  "main": "index.php",
+  "scripts": {
+    "test": ""
+  },
+  "author": "William Cobb <hello@bigwilliam.com>",
+  "homepage": "http://bigwilliam.com",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3"
+  }
+}
