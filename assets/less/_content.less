@@ -1,0 +1,46 @@
+/*
+ * => GENERAL CONTENT STYLES
+ * ---------------------------------------------------------------------------*/
+
+body {}
+.content {}
+
+// Headings
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {}
+
+h1, .h1 { font-size: 60px; }
+h2, .h2 { font-size: 45px; }
+h3, .h3 { font-size: 30px; }
+h4, .h4 { font-size: 22.5px; }
+h5, .h5 { font-size: @basefontsize; }
+
+hr {
+	// border-color: @blue;
+}
+
+.x-btn, .button, [type="submit"] {
+	// text-transform: uppercase;
+	// text-shadow: none !important;
+}
+
+
+/*
+ * => GRID BLOCK ITEM (CORNERSTONE)
+ * ---------------------------------------------------------------------------*/
+
+// Don't stack layout
+
+@media (max-width: @container-small) {
+	.x-block-grid.two-up>li:nth-child(2n+1) {
+	  clear: none;
+	}	
+	.x-block-grid.two-up>li {
+	  width: 100%;
+	}
+}

@@ -1,0 +1,131 @@
+/*
+ * => HEADER
+ * ---------------------------------------------------------------------------*/
+
+
+// BRAND //
+
+.x-brand {}
+
+@media screen and (min-width: @container-x-small + 1) {
+	.x-brand {}
+}
+
+
+/*
+ * => NAV, NAV BUTTONS, & SUBNAV RESPONSIVE
+ * ---------------------------------------------------------------------------*/
+
+
+
+
+/*
+ * => TRANSPARENT NAVBAR OPTION 
+ * => (to use: apply class 'transparent-nav' to the body, under page settings)
+ * ---------------------------------------------------------------------------*/
+
+
+@media screen and (min-width: @container-medium + 1) {
+
+	body.transparent-nav {
+
+		.x-navbar {
+			background-color: transparent !important;
+		}
+
+		// Brand
+
+		.x-brand {
+			> img.normal-navbar-logo {
+				display: none;
+			}
+			> img.alt-navbar-logo {
+				display: inline;
+			}
+			> img.navbar-logo-color {
+				display: none;
+			}
+		}
+
+		.x-topbar .p-info, 
+		.x-topbar .p-info a, 
+		.x-navbar .desktop .x-nav > li > a, 
+		// .x-navbar .desktop .sub-menu a, 
+		.x-navbar .mobile .x-nav li > a, 
+		.x-breadcrumb-wrap a, 
+		.x-breadcrumbs .delimiter {
+			color: @blue;
+		}
+
+		.x-navbar .desktop .x-nav > li > a:hover,
+		.x-navbar .desktop .x-nav > li.x-active > a, 
+		.x-navbar .desktop .x-nav > li.current-menu-item > a,
+		.x-navbar .desktop .x-nav > li.current-page-ancestor > a {
+			background-color: @blue;
+			color: #fff;
+			transition: background .25s ease;
+		}
+
+		// NAV BUTTONS
+		.x-navbar .desktop .x-nav > li.nav-button {
+			&.btn-clear > a {
+				border-color: @blue;
+			}
+			&.btn-clear:hover > a {
+				// background-color: @green;
+				border-color: @green;
+			}
+		}
+
+		.menu-item-has-children.x-active:after {
+			content: url('../img/arrow-down-blue.png');
+		}
+
+
+		// that white gradient
+		header.masthead {
+			position: fixed;
+			left: 0;
+			right: 0;
+			// height: 250px;
+			// background: transparent url('../img/bg-gradient-white.png') 0 0 repeat-x;
+			z-index: 100;
+
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100,7db9e8+100&amp;1+0,0+100 */
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(125,185,232,0) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(125,185,232,0) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#007db9e8',GradientType=0 ); /* IE6-8 */
+
+			transition: background .5s ease;
+		}
+
+		// When the navbar turns to white bg (see JavaScript in customize menu)
+
+		&.white {
+			header.masthead {
+				background-color: white;
+				transition: background .5s ease;
+			}
+
+			// change logo to color logo
+
+			.x-brand {
+				> img.normal-navbar-logo {
+					display: none;
+				}
+				> img.alt-navbar-logo {
+					display: none;
+				}
+				> img.navbar-logo-color {
+					display: inline;
+				}
+			}
+		} // end &.white
+	} // end .transparent-nav
+}  // end @media
