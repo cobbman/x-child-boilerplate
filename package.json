@@ -1,14 +1,10 @@
 {
   "name": "x-child-nlem",
   "version": "1.0.0",
-  "private": true,
-  "description": "X Theme Child Theme with changes I use in every site (mostly)",
-  "main": "index.php",
-  "scripts": {
-    "test": ""
-  },
   "author": "William Cobb <hello@bigwilliam.com>",
   "homepage": "http://bigwilliam.com",
+  "description": "X Theme Child Theme with changes I use in every site (mostly)",
+  "private": true,
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.0",
