@@ -1,5 +1,5 @@
 {
-  "name": "x-child-starter",
+  "name": "x-child-nlem",
   "version": "1.0.0",
   "private": true,
   "description": "X Theme Child Theme with changes I use in every site (mostly)",
@@ -12,6 +12,12 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-less": "^3.0.3"
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^1.1.0",
+    "gulp-less": "^3.0.3",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7"
   }
 }
