@@ -1,6 +1,7 @@
 {
   "name": "x-child-starter",
   "version": "1.0.0",
+  "private": true,
   "description": "X Theme Child Theme with changes I use in every site (mostly)",
   "main": "index.php",
   "scripts": {
