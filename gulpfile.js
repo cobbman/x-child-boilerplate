@@ -1,3 +1,9 @@
+// TODO: 
+// image optimization
+// JS minify and lint
+// combine with roots/sage???
+//
+
 var gulp         = require('gulp');
 var gutil        = require('gulp-util');
 var notify       = require('gulp-notify');
@@ -24,25 +30,25 @@ var targetJSDir = 'assets/js';
 // Compile LESS for dev
 gulp.task('dev', function () {
   return gulp.src(lessDir + '/main.less')
-		.pipe( less() ).on( 'error', gutil.log )
+    .pipe( less() ).on( 'error', gutil.log )
     .pipe( gulp.dest(targetCSSDir) )
-    .pipe( notify('LESS Files built and Page Reloaded') )
+    .pipe( notify('LESS Compiled for DEV') )
     .pipe( livereload() );
 });
 
 // Compile LESS and Minify CSS for production
 gulp.task('build', function () {
   return gulp.src(lessDir + '/main.less')
-		.pipe( sourcemaps.init() )
-		.pipe( less() ).on( 'error', gutil.log )
+    .pipe( sourcemaps.init() )
+    .pipe( less() ).on( 'error', gutil.log )
     .pipe( cssnano() ).on( 'error', gutil.log )
   //   .pipe(autoprefixer({
-		// 	browsers: ['last 2 versions'],
-		// 	cascade: true
-		// }))
-		.pipe( sourcemaps.write('.') )
+    //  browsers: ['last 2 versions'],
+    //  cascade: true
+    // }))
+    .pipe( sourcemaps.write('.') )
     .pipe( gulp.dest(targetCSSDir) )
-    .pipe( notify('Less files compiled and MINIFIED for Production') )
+    .pipe( notify('LESS compiled and minified for PRODUCTION') )
     .pipe( livereload() );
 });
 
@@ -54,9 +60,9 @@ gulp.task('build', function () {
 //    });
 //});
 
-// Gulp Watch
+// Gulp watch
 gulp.task('watch', function () {
-	livereload.listen();
+  livereload.listen();
   gulp.watch(lessDir + '/*.less', ['dev']);
   //gulp.watch('app/**/*.php', ['phpunit']);
 });
