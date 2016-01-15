@@ -22,7 +22,7 @@ var targetJSDir = 'assets/js';
 
 
 // Compile LESS for dev
-gulp.task('css', function () {
+gulp.task('dev', function () {
   return gulp.src(lessDir + '/main.less')
 		.pipe( less() ).on( 'error', gutil.log )
     .pipe( gulp.dest(targetCSSDir) )
@@ -54,12 +54,12 @@ gulp.task('build', function () {
 //    });
 //});
 
-// Keep an eye on Sass, Coffee, and PHP files for changes...
+// Gulp Watch
 gulp.task('watch', function () {
 	livereload.listen();
-  gulp.watch(lessDir + '/*.less', ['css']);
+  gulp.watch(lessDir + '/*.less', ['dev']);
   //gulp.watch('app/**/*.php', ['phpunit']);
 });
 
-// What tasks does running gulp trigger?
-gulp.task('default', ['css']);
+// Gulp Default
+gulp.task('default', ['dev']);
