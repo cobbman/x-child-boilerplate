@@ -24,8 +24,10 @@
  * => HELPER CLASSES
  * ---------------------------------------------------------------------------*/
 
-.content .white,
-.content .text-white {
+// Font Colors
+
+.white,
+.text-white {
 	color: #fff;
 
 	h1, .h1,
@@ -37,6 +39,69 @@
 		color: #fff;
 	}
 }
+
+.blue,
+.text-blue {
+	color: @blue2;
+
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6 {
+		color: @blue2;
+	}
+}
+
+.gray,
+.text-gray {
+	color: @gray;
+
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6 {
+		color: @gray;
+	}
+}
+
+.red,
+.text-red {
+	color: @red;
+
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6 {
+		color: @red;
+	}
+}
+
+.green,
+.text-green {
+	color: @green;
+
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6 {
+		color: @green;
+	}
+}
+
+// Background colors
+.bg-white { background-color: @white; }
+.bg-blue { background-color: @blue; }
+.bg-red { background-color: @red; }
+.bg-gray { background-color: @gray; }
+.bg-green { background-color: @green; }
 
 // Margins
 
@@ -199,40 +264,7 @@
 
 
 
-/*
- * => Containers and Layout Fixes
- * ---------------------------------------------------------------------------*/
 
-
-// Fix container width, when marginless columns are set, with container
-
-.x-section .x-container.max.width.marginless-columns {
-	width: @sitewidth; 
-}
-
-// Fix @sitewidth for mobile devices
-
-@media screen and (max-width: @container-small) {
-	.x-section .x-container.max.width.marginless-columns {
-		width: 90%;
-	}
-}
-
-@media screen and (max-width: @container-medium) {
-
-	// provide some spacing when on mobile devices
-	body .x-container.width {
-		width: 90%; 
-	}
-
-	// make .x-sm widths stack at a wider range
-
-	.x-column.x-sm {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-	}
-}
 
 
 
