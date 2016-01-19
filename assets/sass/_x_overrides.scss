@@ -1,0 +1,50 @@
+/*
+ * => GRID BLOCK ITEM (CORNERSTONE)
+ * ---------------------------------------------------------------------------*/
+
+// Don't stack layout
+
+@media (max-width: @container-small) {
+	.x-block-grid.two-up>li:nth-child(2n+1) {
+	  clear: none;
+	}	
+	.x-block-grid.two-up>li {
+	  width: 100%;
+	}
+}
+
+
+/*
+ * => Containers and Layout Fixes
+ * ---------------------------------------------------------------------------*/
+
+
+// Fix container width, when marginless columns are set, with container
+
+.x-section .x-container.max.width.marginless-columns {
+	width: @sitewidth; 
+}
+
+// Fix @sitewidth for mobile devices
+
+@media screen and (max-width: @container-small) {
+	.x-section .x-container.max.width.marginless-columns {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: @container-medium) {
+
+	// provide some spacing when on mobile devices
+	body .x-container.width {
+		width: 90%; 
+	}
+
+	// make .x-sm widths stack at a wider range
+
+	.x-column.x-sm {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+	}
+}

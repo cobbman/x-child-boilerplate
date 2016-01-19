@@ -7,9 +7,8 @@
 var gulp         = require('gulp');
 var gutil        = require('gulp-util');
 var notify       = require('gulp-notify');
-var less         = require('gulp-less');
+var less         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var cssnano      = require('gulp-cssnano');
 var sourcemaps   = require('gulp-sourcemaps');
 var livereload   = require('gulp-livereload');
 
@@ -17,7 +16,7 @@ var livereload   = require('gulp-livereload');
 //var sys = require('sys');
 
 // Where do you store your Sass files?
-var lessDir = 'assets/less';
+var sassDir = 'assets/sass';
 
 // Which directory should LESS compile to?
 var targetCSSDir = 'assets/css';
@@ -27,29 +26,24 @@ var targetCSSDir = 'assets/css';
 var targetJSDir = 'assets/js';
 
 
-// Compile LESS for dev
+// Compile CSS for dev
 gulp.task('dev', function () {
-  return gulp.src(lessDir + '/main.less')
-    .pipe( less() ).on( 'error', gutil.log )
-    .pipe( gulp.dest(targetCSSDir) )
-    .pipe( notify('LESS Compiled for DEV') )
-    .pipe( livereload() );
+  return gulp.src(sassDir + '/main.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest(targetCSSDir))
+    .pipe(livereload());
+    .pipe(notify('CSS Compiled. Page RELOADED'))
 });
 
 // Compile LESS and Minify CSS for production
 gulp.task('build', function () {
-  return gulp.src(lessDir + '/main.less')
-    .pipe( sourcemaps.init() )
-    .pipe( less() ).on( 'error', gutil.log )
-    .pipe( cssnano() ).on( 'error', gutil.log )
-  //   .pipe(autoprefixer({
-    //  browsers: ['last 2 versions'],
-    //  cascade: true
-    // }))
-    .pipe( sourcemaps.write('.') )
-    .pipe( gulp.dest(targetCSSDir) )
-    .pipe( notify('LESS compiled and minified for PRODUCTION') )
-    .pipe( livereload() );
+  return gulp.src(sassDir + '/main.less')
+    .pipe(sourcemaps.init() )
+    .pipe(sass({outputStyle: 'compressed'}).on( 'error', sass.logError ))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(targetCSSDir) )
+    .pipe(notify('LESS compiled and minified for PRODUCTION') )
+    .pipe(livereload());
 });
 
 
@@ -63,7 +57,7 @@ gulp.task('build', function () {
 // Gulp watch
 gulp.task('watch', function () {
   livereload.listen();
-  gulp.watch(lessDir + '/*.less', ['dev']);
+  gulp.watch(sassDir + '/*.scss', ['dev']);
   //gulp.watch('app/**/*.php', ['phpunit']);
 });
 
