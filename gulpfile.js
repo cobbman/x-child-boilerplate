@@ -29,19 +29,26 @@ var targetJSDir = 'assets/js';
 // Compile CSS for dev
 gulp.task('dev', function () {
   return gulp.src(sassDir + '/main.scss')
-    .pipe(sass().on('error', sass.logError))
+    // .pipe(sourcemaps.init())
+    .pipe(sass({
+      sourcemap: '.',
+      sourceComments: true
+    }).on('error', sass.logError))
     .pipe(gulp.dest(targetCSSDir))
-    .pipe(livereload())
-    .pipe(notify('CSS Compiled. Page RELOADED'));
+    // .pipe(sourcemaps.write('.'))
+    .pipe(notify('CSS Compiled. Page RELOADED'))
+    .pipe(livereload());
 });
 
 // Compile LESS and Minify CSS for production
 gulp.task('build', function () {
   return gulp.src(sassDir + '/main.scss')
-    .pipe(sourcemaps.init() )
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sourcemaps.init())
+    .pipe(sass({
+      outputStyle: 'compressed'
+    }).on('error', sass.logError))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(targetCSSDir) )
+    .pipe(gulp.dest(targetCSSDir))
     .pipe(notify('CSS compiled and minified for PRODUCTION') );
 });
 
@@ -61,4 +68,4 @@ gulp.task('watch', function () {
 });
 
 // Gulp Default
-gulp.task('default', ['dev']);
+gulp.task('default', ['build']);
