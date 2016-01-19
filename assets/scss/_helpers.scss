@@ -179,7 +179,7 @@
 
 // Hover effect for block elements
 .hover-effect:hover {
-	box-shadow: 0 0 10px @blue;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 
@@ -287,7 +287,7 @@
  * ---------------------------------------------------------------------------*/
 .read-more-link,
 .read-less-link {
-	color: @red;
+	color: $red;
 	// margin-top: 1em;
 	font-weight: bold;
 	text-transform: uppercase;

@@ -7,7 +7,7 @@
 var gulp         = require('gulp');
 var gutil        = require('gulp-util');
 var notify       = require('gulp-notify');
-var less         = require('gulp-sass');
+var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps   = require('gulp-sourcemaps');
 var livereload   = require('gulp-livereload');
@@ -31,8 +31,8 @@ gulp.task('dev', function () {
   return gulp.src(sassDir + '/main.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest(targetCSSDir))
-    .pipe(livereload());
-    .pipe(notify('CSS Compiled. Page RELOADED'))
+    .pipe(livereload())
+    .pipe(notify('CSS Compiled. Page RELOADED'));
 });
 
 // Compile LESS and Minify CSS for production
@@ -42,7 +42,7 @@ gulp.task('build', function () {
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(targetCSSDir) )
-    .pipe(notify('CSS compiled and minified for PRODUCTION') )
+    .pipe(notify('CSS compiled and minified for PRODUCTION') );
 });
 
 

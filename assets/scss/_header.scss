@@ -55,14 +55,14 @@
 		.x-navbar .mobile .x-nav li > a, 
 		.x-breadcrumb-wrap a, 
 		.x-breadcrumbs .delimiter {
-			color: @blue;
+			color: $blue;
 		}
 
 		.x-navbar .desktop .x-nav > li > a:hover,
 		.x-navbar .desktop .x-nav > li.x-active > a, 
 		.x-navbar .desktop .x-nav > li.current-menu-item > a,
 		.x-navbar .desktop .x-nav > li.current-page-ancestor > a {
-			background-color: @blue;
+			background-color: $blue;
 			color: #fff;
 			transition: background .25s ease;
 		}
@@ -70,11 +70,11 @@
 		// NAV BUTTONS
 		.x-navbar .desktop .x-nav > li.nav-button {
 			&.btn-clear > a {
-				border-color: @blue;
+				border-color: $blue;
 			}
 			&.btn-clear:hover > a {
 				// background-color: @green;
-				border-color: @green;
+				border-color: $green;
 			}
 		}
 
@@ -110,7 +110,7 @@
 
 		&.white {
 			header.masthead {
-				background-color: white;
+				background-color: $white;
 				transition: background .5s ease;
 			}
 
