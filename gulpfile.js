@@ -16,7 +16,7 @@ var livereload   = require('gulp-livereload');
 //var sys = require('sys');
 
 // Where do you store your Sass files?
-var sassDir = 'assets/sass';
+var sassDir = 'assets/scss';
 
 // Which directory should LESS compile to?
 var targetCSSDir = 'assets/css';

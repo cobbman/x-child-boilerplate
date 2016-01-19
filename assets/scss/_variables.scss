@@ -1,0 +1,210 @@
+/*
+ * => VARIABLES.LESS
+ * ---------------------------------------------------------------------------*/
+
+
+// COLOR
+$red:   #e51b24;
+$white: #ffffff;
+$blue:  #00466a;  // header/footer
+$blue2: #005984; // content
+$gray:  #e5e5e3;
+$green: #00a94e; // not used
+
+// FONT
+$basefontsize: 22px;
+
+// Site Width -> match this with the value set in customizer under "Layout and Design > Site Width (%)"
+$sitewidth: 65%; 
+
+// Container sizes (Matches default x-theme breakpoints. Don't change unless you have to.)
+$container-large:  1199px; // 980-1199    (large) iPad landscape is 1024
+$container-medium: 979px;  // 768-979     (medium) iPad Portrait is 768
+$container-small:  767px;  // 481-767     (small)
+$container-xsmall: 480px;  // 480 & below (x-small)
+
+
+/*
+ * => VARIABLES.LESS (and MIXINS for now)
+ * ---------------------------------------------------------------------------*/
+
+
+// COLOR
+$red:         #e51b24;
+$white:       #ffffff;
+$blue:        #00466a;       // header/footer
+$blue2:       #005984;       // content
+$gray:        #7f7f7f;       // fonts
+$light-gray:  #e5e5e3;       // content bg
+$green:       #00a94e;       // not used
+
+// FONT
+$basefontsize: 22px;
+
+$fontfamilyalt: 'TrajanPro', serif;
+
+
+// Site Width -> match this with the value set in customizer under "Layout and Design > Site Width (%)"
+$sitewidth: 65%; 
+
+// Container sizes (Matches default x-theme breakpoints. Don't change unless you have to.)
+$container-large:  1199px; // 980-1199    (large) iPad landscape is 1024
+$container-medium: 979px;  // 768-979     (medium) iPad Portrait is 768
+$container-small:  767px;  // 481-767     (small)
+$container-xsmall: 480px;  // 480 & below (x-small)
+
+// Screen XS
+$screen-xs:        480px;
+$screen-xs-min:    $screen-xs;
+$screen-xs-max:    ( $screen-sm-min - 1 );
+// Screen SM
+$screen-sm:        768px;
+$screen-sm-min:    $screen-sm;
+$screen-sm-max:    ( $screen-md-min - 1 );
+// Screen MD
+$screen-md:        979px;
+$screen-md-min:    $screen-md;
+$screen-md-max:    ( $screen-lg-min - 1 );
+// Screen LG
+$screen-lg:        1200px;
+$screen-lg-min:    $screen-lg;
+$screen-lg-max:    ( $screen-xl-min - 1 );
+// Screen XL
+$screen-xl:        1600px;
+$screen-xl-min:    $screen-xl;
+
+/*
+ * => MIXINS
+ * ---------------------------------------------------------------------------*/
+
+
+// MEDIA QUERIES: http://simbo.github.io/2014/03/less-media-query-mixins.html
+
+// xs only
+.screen-xs($rules) {
+  $media (max-width: $screen-xs-max) { $rules(); }
+}
+
+// sm and larger
+.screen-sm-min($rules) {
+  $media (min-width: $screen-sm-min) { $rules(); }
+}
+
+// sm only
+.screen-sm($rules) {
+    $media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { $rules(); }
+}
+
+// sm and smaller
+.screen-sm-max($rules) {
+    $media (max-width: $screen-sm-max) { $rules(); }
+}
+
+// md and larger
+.screen-md-min($rules) {
+    $media (min-width: $screen-md-min) { $rules(); }
+}
+
+// md only
+.screen-md($rules) {
+    $media (min-width: $screen-md-min) and (max-width: $screen-md-max) { $rules(); }
+}
+
+// md and smaller
+.screen-md-max($rules) {
+    $media (max-width: $screen-md-max) { $rules(); }
+}
+
+// lg and larger
+.screen-lg-min($rules) {
+    $media (min-width: $screen-lg-min) { $rules(); }
+}
+
+// lg only
+.screen-lg($rules) {
+    $media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) { $rules(); }
+}
+
+// lg and smaller
+.screen-lg-max($rules) {
+    $media (max-width: $screen-lg-max) { $rules(); }
+}
+
+// xl and larger
+.screen-xl($rules) {
+    $media (min-width: $screen-xl-min) { $rules(); }
+}
+
+
+// GRADIENTS: http://simbo.github.io/2014/03/less-gradient-mixins-with-unlimited-colorstops.html
+
+#gradient {
+
+  // Filter color-stop params
+  .color-stops($color-stops-N...) {
+      $color-stops: ~`"${arguments}".replace(/(^\[)|(\]$)/g,'')`;
+      $color-stops-webkit: ~`(function(c){
+          for(var i=0; i<c.length; i++) {
+              c[i] = c[i].trim().split(/\s+/);
+              if(c[i].length==1)
+                  c[i].push(i==0?"0%":"100%");
+              c[i] = "color-stop("+c[i].reverse().join(',')+")";
+          }
+          return c.join(",");
+      })("${color-stops}".split(','))`;
+  }
+
+  // Creepy IE special treatment, fallback on first and last color-stop
+  .ie-filter($color-stops; $type) {
+      filter: ~`(function(c,t){
+          var a = c[0].split(/\s+/)[0].trim(),
+              b = c.slice(-1)[0].trim().split(/\s+/)[0].trim();
+          return "progid:DXImageTransform.Microsoft.gradient(startColorstr='"+a+"', endColorstr='"+b+"', GradientType="+t+")";
+      })("${color-stops}".split(','),${type})`;
+  }
+
+  // Horizontal gradient, from left to right
+  .horizontal($color-stops-0: #555 0%, $color-stops-1: #333 100%, $color-stops-N...) {
+      .color-stops($arguments);
+      background-image: -webkit-gradient(linear, left top, right top, $color-stops-webkit); // Chrome, Safari 4+
+      background-image: -webkit-linear-gradient(left, $color-stops); // Safari 5.1-6, Chrome 10+
+      background-image: -o-linear-gradient(left, $color-stops); // Opera 12
+      background-image: linear-gradient(to right, $color-stops); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+      background-repeat: repeat-x;
+      #gradient > .ie-filter($color-stops; 1); // IE9 and down, gets no color-stop at all for proper fallback
+  }
+
+  // Vertical gradient, from top to bottom
+  .vertical($color-stops-0: #555 0%, $color-stops-1: #333 100%, $color-stops-N...) {
+      .color-stops($arguments);
+      background-image: -webkit-gradient(linear, left top, left bottom, $color-stops-webkit); // Chrome, Safari 4+
+      background-image: -webkit-linear-gradient(top, $color-stops); // Safari 5.1-6, Chrome 10+
+      background-image: -o-linear-gradient(top, $color-stops); // Opera 12
+      background-image: linear-gradient(to bottom, $color-stops); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+      background-repeat: repeat-x;
+      #gradient > .ie-filter($color-stops; 0); // IE9 and down, gets no color-stop at all for proper fallback
+  }
+
+  .directional($deg: 45deg, $color-stops-0: #555 0%, $color-stops-1: #333 100%, $color-stops-N...) {
+      .color-stops($arguments);
+      background-image: -webkit-linear-gradient($deg, $color-stops); // Safari 5.1-6, Chrome 10+
+      background-image: -o-linear-gradient($deg, $color-stops); // Opera 12
+      background-image: linear-gradient($deg, $color-stops); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+      background-repeat: repeat-x;
+  }
+
+  .radial($color-stops-0: #555 0%, $color-stops-1: #333 100%, $color-stops-N...) {
+      .color-stops($arguments);
+      background-image: -webkit-gradient(radial, center center, 0%, center center, 100%, $color-stops-webkit); // Chrome, Safari 4+
+      background-image: -webkit-radial-gradient(circle, $color-stops); // Safari 5.1-6, Chrome 10+
+      background-image: -o-radial-gradient(circle, $color-stops); // Opera 12+
+      background-image: radial-gradient(circle, $color-stops); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+      background-repeat: no-repeat;
+  }
+
+  .striped($angle: 45deg; $color: rgba(255,255,255,.15)) {
+      #gradient > .directional($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+      background-repeat: repeat;
+  }
+
+}
