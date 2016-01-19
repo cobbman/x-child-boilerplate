@@ -4,13 +4,16 @@
 
 // Don't stack layout
 
-@media (max-width: @container-small) {
+// @media (max-width: @container-small) {
+@include media('<phone') {
+
 	.x-block-grid.two-up>li:nth-child(2n+1) {
 	  clear: none;
 	}	
 	.x-block-grid.two-up>li {
 	  width: 100%;
 	}
+
 }
 
 
@@ -22,18 +25,22 @@
 // Fix container width, when marginless columns are set, with container
 
 .x-section .x-container.max.width.marginless-columns {
-	width: @sitewidth; 
+	width: $sitewidth; 
 }
 
 // Fix @sitewidth for mobile devices
 
-@media screen and (max-width: @container-small) {
+// @media screen and (max-width: @container-small) {
+@include media('<phone') {
+
 	.x-section .x-container.max.width.marginless-columns {
 		width: 90%;
 	}
+
 }
 
-@media screen and (max-width: @container-medium) {
+// @media screen and (max-width: @container-medium) {
+@include media('<tabletwide') {
 
 	// provide some spacing when on mobile devices
 	body .x-container.width {
@@ -47,4 +54,5 @@
     width: 100%;
     margin-right: 0;
 	}
+	
 }

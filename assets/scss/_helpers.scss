@@ -42,7 +42,7 @@
 
 .blue,
 .text-blue {
-	color: @blue2;
+	color: $blue2;
 
 	h1, .h1,
 	h2, .h2,
@@ -50,13 +50,13 @@
 	h4, .h4,
 	h5, .h5,
 	h6, .h6 {
-		color: @blue2;
+		color: $blue2;
 	}
 }
 
 .gray,
 .text-gray {
-	color: @gray;
+	color: $gray;
 
 	h1, .h1,
 	h2, .h2,
@@ -64,13 +64,13 @@
 	h4, .h4,
 	h5, .h5,
 	h6, .h6 {
-		color: @gray;
+		color: $gray;
 	}
 }
 
 .red,
 .text-red {
-	color: @red;
+	color: $red;
 
 	h1, .h1,
 	h2, .h2,
@@ -78,13 +78,13 @@
 	h4, .h4,
 	h5, .h5,
 	h6, .h6 {
-		color: @red;
+		color: $red;
 	}
 }
 
 .green,
 .text-green {
-	color: @green;
+	color: $green;
 
 	h1, .h1,
 	h2, .h2,
@@ -92,16 +92,16 @@
 	h4, .h4,
 	h5, .h5,
 	h6, .h6 {
-		color: @green;
+		color: $green;
 	}
 }
 
 // Background colors
-.bg-white { background-color: @white; }
-.bg-blue { background-color: @blue; }
-.bg-red { background-color: @red; }
-.bg-gray { background-color: @gray; }
-.bg-green { background-color: @green; }
+.bg-white { background-color: $white; }
+.bg-blue { background-color: $blue; }
+.bg-red { background-color: $red; }
+.bg-gray { background-color: $gray; }
+.bg-green { background-color: $green; }
 
 // Margins
 
@@ -112,7 +112,7 @@
 // lines (aka lines under headings)... <div class=line></div>
 
 .line {
-	border-bottom: 2px solid @blue; 
+	border-bottom: 2px solid $blue; 
 	max-width: 100%;
 	margin: auto;
 
@@ -189,7 +189,8 @@
 
 // iPad (portrait and smaller)
 
-@media screen and (max-width: @container-small) {
+//@media screen and (max-width: @container-small) {
+@include media('<tablet') {
 
 	.mobile-block {
 		display: block;
@@ -202,7 +203,8 @@
 
 // Phones (portrait)
 
-@media screen and (max-width: @container-xsmall) {
+//@media screen and (max-width: @container-xsmall) {
+@include media('<phone') {
 
 	.mobile-wide {
 		padding-left: 0 !important;
@@ -237,35 +239,31 @@
 
 
 /* medium: 768px - 979px */
-@media ( max-width: @container-medium ) {
+// @media ( max-width: @container-medium ) {
+@include media('<desktop') {
+
 	.column-block-medium .x-column.x-sm {
 		float: none;
 		width: 100%;
 		margin-right: 0;
 	}
+
 }
 
 /* Large: 980px - 1199px */
-@media ( min-width: @container-medium + 1 ) and ( max-width: @container-large ) {
+// @media ( min-width: @container-medium + 1 ) and ( max-width: @container-large ) {
+@include media('>tablet', '<desktop') {
+
 	.column-block-large .x-column.x-sm {
 		float: none;
 		width: 100%;
 		margin-right: 0;
 	}
+
 }
 
 /* X-Large: 1200px and up (not needed, but it's here) */
-@media ( min-width: @container-large + 1 ) {}
-
-
-
-
-
-
-
-
-
-
+// @media ( min-width: @container-large + 1 ) {}
 
 
 /*
@@ -305,7 +303,9 @@
 
 // Fix on mobile views
 
-@media screen and (max-width: @container-small) {
+// @media screen and (max-width: @container-small) {
+@include media ('<phone') {
+
 	.alignright,
 	.alignleft {
 		float: none;

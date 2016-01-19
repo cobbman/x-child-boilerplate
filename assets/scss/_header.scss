@@ -6,10 +6,11 @@
 
 // BRAND //
 
-.x-brand {}
-
-@media screen and (min-width: @container-xsmall + 1) {
-	.x-brand {}
+.x-brand {
+	@include media('<phone') {
+		display: block;
+		margin: 1em auto;
+	}
 }
 
 
@@ -25,8 +26,7 @@
  * => (to use: apply class 'transparent-nav' to the body, under page settings)
  * ---------------------------------------------------------------------------*/
 
-
-@media screen and (min-width: @container-medium + 1) {
+@include media ('>phone') {
 
 	body.transparent-nav {
 
@@ -129,4 +129,4 @@
 			}
 		} // end &.white
 	} // end .transparent-nav
-}  // end @media
+} // end @include media
