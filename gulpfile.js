@@ -37,13 +37,12 @@ gulp.task('dev', function () {
 
 // Compile LESS and Minify CSS for production
 gulp.task('build', function () {
-  return gulp.src(sassDir + '/main.less')
+  return gulp.src(sassDir + '/main.scss')
     .pipe(sourcemaps.init() )
-    .pipe(sass({outputStyle: 'compressed'}).on( 'error', sass.logError ))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(targetCSSDir) )
-    .pipe(notify('LESS compiled and minified for PRODUCTION') )
-    .pipe(livereload());
+    .pipe(notify('CSS compiled and minified for PRODUCTION') )
 });
 
 
