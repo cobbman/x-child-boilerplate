@@ -2,25 +2,63 @@
  * => GENERAL CONTENT STYLES
  * ---------------------------------------------------------------------------*/
 
-body {}
-.content {
-	background-color: green;
+html {
+  font-size: $basefontsize - 4;
+  -ms-text-size-adjust: $baseFontSize - 4;
+  -webkit-text-size-adjust: auto;
+
+  @include media('>phone') {
+    font-size: $basefontsize - 2;
+	  -ms-text-size-adjust: $baseFontSize - 2;
+  }
+  @include media('>=ipadPortrait') {
+    font-size: $basefontsize;
+	  -ms-text-size-adjust: $baseFontSize;
+  }
 }
 
-// Headings
+body {
+	.entry-header, 
+	.entry-content {
+		@include font-size(1); 
+	}
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {}
 
-h1, .h1 { font-size: 60px; }
-h2, .h2 { font-size: 45px; }
-h3, .h3 { font-size: 30px; }
-h4, .h4 { font-size: 22.5px; }
-h5, .h5 { font-size: $basefontsize; }
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6 {
+		font-family: $fontfamilyalt;
+	}
+
+	h1, .h1 { @include font-size(1.5); }
+	h2, .h2 { @include font-size(1.3); }
+	h3, .h3 { @include font-size(1.1); }
+	h4, .h4 { @include font-size(0.9); } 
+	h5, .h5 { @include font-size(0.7); }
+	h6, .h6 { @include font-size(0.5); }
+
+	@include media('>phone') {
+		h1, .h1 { @include font-size(2);   } 
+		h2, .h2 { @include font-size(1.8); }
+		h3, .h3 { @include font-size(1.4); }
+		h4, .h4 { @include font-size(1.2); }
+		h5, .h5 { @include font-size(1);   }
+		h6, .h6 { @include font-size(0.8); }
+	}
+	
+	@include media('>ipadPortrait') {
+		h1, .h1 { @include font-size(2.5); }
+		h2, .h2 { @include font-size(2.1); }
+		h3, .h3 { @include font-size(1.8); }
+		h4, .h4 { @include font-size(1.5); }
+		h5, .h5 { @include font-size(1);   }
+		h6, .h6 { @include font-size(0.8); }
+	}
+
+} // end body
 
 hr {
 	// border-color: $blue;
