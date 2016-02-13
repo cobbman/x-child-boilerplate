@@ -1,115 +1,52 @@
+ /*
+ * => BUTTON MIXINS
+ * ---------------------------------------------------------------------------*/
+@mixin createButton($name, $value) {
+
+	body .x-btn {
+
+		// transparent
+		&.#{$name}-transparent {
+			background-color: #fff;
+			color: $value;
+			border-width: 2px;
+			font-weight: bold;
+			&:hover,
+			&:focus {
+				background-color: $value;
+				border-color: $value;
+				color: #fff;
+			}
+		}
+		// solid
+		&.#{$name}-solid {
+			background-color: $value;
+			border-color: $value;
+			&:hover,
+			&:focus {
+				background-color: darken($value, 5%);
+			}
+		}
+		// hover
+		&.hover-#{$name} {
+			&:hover,
+			&:focus {
+				background-color: $value;
+				border-color: $value;
+			}
+		}
+	}
+}
+
 /*
- * => BUTTONS
+ * => BUTTON STYLES
  * ---------------------------------------------------------------------------*/
 
 body .x-btn {
-
 	font-weight: bold;
+}
 
-
-
-	// Build button classes from $colors list in _variables.scss
-	@each $name, $value in $colors {
-		@include createButton($name, $value);
-	}
-
-	// Transparent
-	// &.x-btn-transparent {
-	// 	background-color: #fff;
-	// 	color: $green;
-	// 	border-width: 2px;
-	// 	font-weight: bold;
-	// 	&:hover {
-	// 		background-color: $blue;
-	// 		border-color: $blue;
-	// 		color: #fff;
-	// 	}
-	// }
-	// &.red-transparent {
-	// 	background-color: #fff;
-	// 	border-color: $red;
-	// 	border-width: 2px;
-	// 	color: $red;
-	// 	&:hover {
-	// 		background-color: $red;
-	// 		border-color: $red;
-	// 		color: #fff;
-	// 	}
-	// }
-	// &.blue-transparent {
-	// 	background-color: #fff;
-	// 	border-color: $blue;
-	// 	border-width: 2px;
-	// 	color: $blue;
-	// 	&:hover {
-	// 		background-color: $blue;
-	// 		border-color: $blue;
-	// 		color: #fff;
-	// 	}
-	// }
-	// &.green-transparent {
-	// 	background-color: #fff;
-	// 	border-color: $green;
-	// 	border-width: 2px;
-	// 	color: $green;
-	// 	&:hover {
-	// 		background-color: $green;
-	// 		border-color: $green;
-	// 		color: #fff;
-	// 	}
-	// }
-	// &.white-transparent {
-	// 	background-color: transparent;
-	// 	border-color: #fff;
-	// 	border-width: 2px;
-	// 	color: #fff;
-	// 	&:hover {
-	// 		background-color: rgba(255,255,255,0.3);
-	// 		border-color: #fff;
-	// 		color: #fff;
-	// 	}
-	// }
-
-	// Red Solid
-	// &.red-solid {
-	// 	background-color: $red;
-	// 	border-color: $red;
-	// 	&:hover {
-	// 		background-color: $blue;
-	// 		border-color: $blue;
-	// 	}
-	// }
-
-	// Blue Solid
-	// &.blue-solid {
-	// 	background-color: $blue;
-	// 	border-color: $blue;
-	// 	&:hover {
-	// 		background-color: $green;
-	// 		border-color: $green;
-	// 	}
-	// }
-
-	// Button Hover controls
-	// &.hover-red {
-	// 	&:hover,
-	// 	&:focus {
-	// 		background-color: $red;
-	// 		border-color: $red;
-	// 	}
-	// }
-	// &.hover-green {
-	// 	&:hover,
-	// 	&:focus {
-	// 		background-color: $green;
-	// 		border-color: $green;
-	// 	}
-	// }
-	// &.hover-blue {
-	// 	&:hover,
-	// 	&:focus {
-	// 		background-color: $blue;
-	// 		border-color: $blue;
-	// 	}
-	// }
+// Build button classes from $mainColors list in _variables.scss
+@each $name, $value in $mainColors {
+	@include createButton($name, $value);
 }

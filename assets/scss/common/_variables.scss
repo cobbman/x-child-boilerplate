@@ -1,5 +1,5 @@
 /*
- * => FONT SIZE
+ * => FONT VARS
  * ---------------------------------------------------------------------------*/
 $BaseFontSize: 18px;
 $fontfamilybase: 'Open Sans', sans-serif;
@@ -13,47 +13,25 @@ $fontfamilyalt: 'TrajanPro', serif;
 
 
 /*
- * => COLORS
+ * => COLOR VARS & MIXINS
  * ---------------------------------------------------------------------------*/
 
 /* Set the main site colors here */
-$colors: (
-	white: #ffffff,
-	orange: #ff6633,
-	green: #339933,   
-	blue: #006699,       
-	gray: #333333
+$mainColors: (
+	'white': #ffffff,
+	'orange':#ff6633,
+	'green': #339933,   
+	'blue':  #006699,       
+	'gray':  #333333
 );
 
 
 
-// Text Colors
-@mixin text-color($name, $value) {
-	.text-#{$name} {
-		color: $value;
-		p,
-		h1, .h1,
-		h2, .h2,
-		h3, .h3,
-		h4, .h4,
-		h5, .h5,
-		h6, .h6 {
-			color: $value;
-		}
-	}
-}
-
-// Background Colors
-@mixin bg-color($name, $value) {
-	.bg-#{$name} {
-		background-color: $value;
-	}
-}
 
 // return color value from given key
 @function color($key) {
-  @if map-has-key($colors, $key) {
-    @return map-get($colors, $key);
+  @if map-has-key($mainColors, $key) {
+    @return map-get($mainColors, $key);
   }
   @warn "Unknown `#{$key}` in $colors.";
   @return null;
@@ -62,41 +40,8 @@ $colors: (
 
 
 
-/*
- * => BUTTONS
- * ---------------------------------------------------------------------------*/
-@mixin createButton($name, $value) {
-	// transparent
-	.#{name}-transparent {
-		background-color: #fff;
-		color: $value;
-		border-width: 2px;
-		font-weight: bold;
-		&:hover,
-		&:focus {
-			background-color: $value;
-			border-color: $value;
-			color: #fff;
-		}
-	}
-	// solid
-	.#{$name}-solid {
-		background-color: $value;
-		border-color: $value;
-		&:hover,
-		&:focus {
-			background-color: darken($value, 5%);
-		}
-	}
-	// hover
-	.hover-#{$name} {
-		&:hover,
-		&:focus {
-			background-color: $value;
-			border-color: $value;
-		}
-	}
-}
+
+
 
 /*
  * => CONTAINERS AND WIDTHS
@@ -132,3 +77,27 @@ $breakpoints: (
 
 
 // GRADIENTS: http://simbo.github.io/2014/03/less-gradient-mixins-with-unlimited-colorstops.html
+
+
+/*
+ * => DEBUG
+ * ---------------------------------------------------------------------------*/
+
+// LINK: http://www.sitepoint.com/debugging-sass-maps/
+@mixin debug-map($map) {
+  @at-root {
+    @debug-map {
+      __toString__: inspect($map);
+      __length__: length($map);
+      __depth__: depth($map);
+      __keys__: map-keys($map);
+      __properties__ {
+        @each $key, $value in $map {
+          #{'(' + type-of($value) + ') ' + $key}: inspect($value);
+        }
+      }
+    }
+  }
+}
+
+@include debug-map($mainColors);

@@ -63,7 +63,7 @@ gulp.task('build', function () {
 // Gulp watch
 gulp.task('watch', function () {
   livereload.listen();
-  gulp.watch(sassDir + '/*.scss', ['dev']);
+  gulp.watch(sassDir + '/**/*.scss', ['dev']);
   //gulp.watch('app/**/*.php', ['phpunit']);
 });
 

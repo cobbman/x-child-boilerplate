@@ -1,3 +1,650 @@
-@-moz-document url-prefix(){img.foxfix,.foxfix>img{width:100%;max-width:100%}}@media screen and (-webkit-min-device-pixel-ratio: 0){img.foxfix,.foxfix>img{max-width:100%}}.white,.text-white{color:#fff}.white h1,.white .h1,.white h2,.white .h2,.white h3,.white .h3,.white h4,.white .h4,.white h5,.white .h5,.white h6,.white .h6,.text-white h1,.text-white .h1,.text-white h2,.text-white .h2,.text-white h3,.text-white .h3,.text-white h4,.text-white .h4,.text-white h5,.text-white .h5,.text-white h6,.text-white .h6{color:#fff}.blue,.text-blue{color:#005984}.blue h1,.blue .h1,.blue h2,.blue .h2,.blue h3,.blue .h3,.blue h4,.blue .h4,.blue h5,.blue .h5,.blue h6,.blue .h6,.text-blue h1,.text-blue .h1,.text-blue h2,.text-blue .h2,.text-blue h3,.text-blue .h3,.text-blue h4,.text-blue .h4,.text-blue h5,.text-blue .h5,.text-blue h6,.text-blue .h6{color:#005984}.gray,.text-gray{color:#7f7f7f}.gray h1,.gray .h1,.gray h2,.gray .h2,.gray h3,.gray .h3,.gray h4,.gray .h4,.gray h5,.gray .h5,.gray h6,.gray .h6,.text-gray h1,.text-gray .h1,.text-gray h2,.text-gray .h2,.text-gray h3,.text-gray .h3,.text-gray h4,.text-gray .h4,.text-gray h5,.text-gray .h5,.text-gray h6,.text-gray .h6{color:#7f7f7f}.red,.text-red{color:#e51b24}.red h1,.red .h1,.red h2,.red .h2,.red h3,.red .h3,.red h4,.red .h4,.red h5,.red .h5,.red h6,.red .h6,.text-red h1,.text-red .h1,.text-red h2,.text-red .h2,.text-red h3,.text-red .h3,.text-red h4,.text-red .h4,.text-red h5,.text-red .h5,.text-red h6,.text-red .h6{color:#e51b24}.green,.text-green{color:#00a94e}.green h1,.green .h1,.green h2,.green .h2,.green h3,.green .h3,.green h4,.green .h4,.green h5,.green .h5,.green h6,.green .h6,.text-green h1,.text-green .h1,.text-green h2,.text-green .h2,.text-green h3,.text-green .h3,.text-green h4,.text-green .h4,.text-green h5,.text-green .h5,.text-green h6,.text-green .h6{color:#00a94e}.bg-white{background-color:#fff}.bg-blue{background-color:#00466a}.bg-red{background-color:#e51b24}.bg-gray{background-color:#7f7f7f}.bg-green{background-color:#00a94e}.margin-top-0{margin-top:0}.margin-bottom-0{margin-bottom:0}.margin-0{margin:0}.line{border-bottom:2px solid #00466a;max-width:100%;margin:auto}.line.small{width:500px}.line.medium{width:950px}.line.white{border-color:#fff}.valign-middle,.vertical-middle,.vertical-center{display:flex;align-items:center;justify-content:center;height:100%}.bounce{animation:bounce 1s 2s infinite ease-in-out;position:relative}.bounce-hover{animation:bounce 1s 2s infinite ease-in-out;position:relative}@keyframes bounce{0%{top:0}40%{}50%{top:10px}55%{top:20px}65%{top:10px}95%{top:0}100%{top:0}}.tilt{transition:all .2s ease-in-out}.tilt:hover{-ms-transform:rotate(7deg);-webkit-transform:rotate(7deg);transform:rotate(7deg)}.grow{transition:all .2s ease-in-out}.grow:hover{-ms-transform:scale(1.1);-webkit-transform:scale(1.1);transform:scale(1.1)}.hover-effect:hover{box-shadow:0 0 10px rgba(0,0,0,0.3)}@media (max-width: 766px){.mobile-block{display:block;margin:1em auto !important;float:none !important;width:90%}}@media (max-width: 479px){.mobile-wide{padding-left:0 !important;padding-right:0 !important;margin:0 auto !important}.mobile-center{text-align:center !important}.mobile-left{text-align:left !important}.x-feature-box-graphic{display:block !important;width:45px;margin:1em auto}.x-feature-box-content{text-align:center}.mobile-hide{display:none !important}}@media (max-width: 1199px){.column-block-medium .x-column.x-sm{float:none;width:100%;margin-right:0}}@media (min-width: 768px) and (max-width: 1199px){.column-block-large .x-column.x-sm{float:none;width:100%;margin-right:0}}.ls-container .x-btn{-webkit-transition:none !important;-moz-transition:none !important;-ms-transition:none !important;-o-transition:none !important;transition:none !important}.read-more-link,.read-less-link{color:#e51b24;font-weight:bold;text-transform:uppercase;padding:5px 0}@media (max-width: 479px){.alignright,.alignleft{float:none;margin:.5em auto;display:block}}html{font-size:14px;-ms-text-size-adjust:14px;-webkit-text-size-adjust:auto}@media (min-width: 481px){html{font-size:16px;-ms-text-size-adjust:16px}}@media (min-width: 768px){html{font-size:18px;-ms-text-size-adjust:18px}}body .entry-header,body .entry-content{font-size:10px;font-size:1rem}body h1,body .h1,body h2,body .h2,body h3,body .h3,body h4,body .h4,body h5,body .h5,body h6,body .h6{font-family:"TrajanPro",serif}body h1,body .h1{font-size:15px;font-size:1.5rem}body h2,body .h2{font-size:13px;font-size:1.3rem}body h3,body .h3{font-size:11px;font-size:1.1rem}body h4,body .h4{font-size:9px;font-size:0.9rem}body h5,body .h5{font-size:7px;font-size:0.7rem}body h6,body .h6{font-size:5px;font-size:0.5rem}@media (min-width: 481px){body h1,body .h1{font-size:20px;font-size:2rem}body h2,body .h2{font-size:18px;font-size:1.8rem}body h3,body .h3{font-size:14px;font-size:1.4rem}body h4,body .h4{font-size:12px;font-size:1.2rem}body h5,body .h5{font-size:10px;font-size:1rem}body h6,body .h6{font-size:8px;font-size:0.8rem}}@media (min-width: 769px){body h1,body .h1{font-size:25px;font-size:2.5rem}body h2,body .h2{font-size:21px;font-size:2.1rem}body h3,body .h3{font-size:18px;font-size:1.8rem}body h4,body .h4{font-size:15px;font-size:1.5rem}body h5,body .h5{font-size:10px;font-size:1rem}body h6,body .h6{font-size:8px;font-size:0.8rem}}@media (max-width: 479px){.x-brand{display:block;margin:1em auto}}@media (min-width: 481px){body.transparent-nav .x-navbar{background-color:transparent !important}body.transparent-nav .x-brand>img.normal-navbar-logo{display:none}body.transparent-nav .x-brand>img.alt-navbar-logo{display:inline}body.transparent-nav .x-brand>img.navbar-logo-color{display:none}body.transparent-nav .x-topbar .p-info,body.transparent-nav .x-topbar .p-info a,body.transparent-nav .x-navbar .desktop .x-nav>li>a,body.transparent-nav .x-navbar .mobile .x-nav li>a,body.transparent-nav .x-breadcrumb-wrap a,body.transparent-nav .x-breadcrumbs .delimiter{color:#00466a}body.transparent-nav .x-navbar .desktop .x-nav>li>a:hover,body.transparent-nav .x-navbar .desktop .x-nav>li.x-active>a,body.transparent-nav .x-navbar .desktop .x-nav>li.current-menu-item>a,body.transparent-nav .x-navbar .desktop .x-nav>li.current-page-ancestor>a{background-color:#00466a;color:#fff;transition:background .25s ease}body.transparent-nav .x-navbar .desktop .x-nav>li.nav-button.btn-clear>a{border-color:#00466a}body.transparent-nav .x-navbar .desktop .x-nav>li.nav-button.btn-clear:hover>a{border-color:#00a94e}body.transparent-nav .menu-item-has-children.x-active:after{content:url("../img/arrow-down-blue.png")}body.transparent-nav header.masthead{position:fixed;left:0;right:0;z-index:100;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);background:-moz-linear-gradient(top, #fff 0%, rgba(125,185,232,0) 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, rgba(125,185,232,0)));background:-webkit-linear-gradient(top, #fff 0%, rgba(125,185,232,0) 100%);background:-o-linear-gradient(top, #fff 0%, rgba(125,185,232,0) 100%);background:-ms-linear-gradient(top, #fff 0%, rgba(125,185,232,0) 100%);background:linear-gradient(to bottom, #fff 0%, rgba(125,185,232,0) 100%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#007db9e8',GradientType=0 );transition:background .5s ease}body.transparent-nav.white header.masthead{background-color:#fff;transition:background .5s ease}body.transparent-nav.white .x-brand>img.normal-navbar-logo{display:none}body.transparent-nav.white .x-brand>img.alt-navbar-logo{display:none}body.transparent-nav.white .x-brand>img.navbar-logo-color{display:inline}}body .x-btn{font-weight:bold}body .x-btn.x-btn-transparent{background-color:#fff;color:#00a94e;border-width:2px;font-weight:bold}body .x-btn.x-btn-transparent:hover{background-color:#00466a;border-color:#00466a;color:#fff}body .x-btn.red-transparent{background-color:#fff;border-color:#e51b24;border-width:2px;color:#e51b24}body .x-btn.red-transparent:hover{background-color:#e51b24;border-color:#e51b24;color:#fff}body .x-btn.blue-transparent{background-color:#fff;border-color:#00466a;border-width:2px;color:#00466a}body .x-btn.blue-transparent:hover{background-color:#00466a;border-color:#00466a;color:#fff}body .x-btn.green-transparent{background-color:#fff;border-color:#00a94e;border-width:2px;color:#00a94e}body .x-btn.green-transparent:hover{background-color:#00a94e;border-color:#00a94e;color:#fff}body .x-btn.white-transparent{background-color:transparent;border-color:#fff;border-width:2px;color:#fff}body .x-btn.white-transparent:hover{background-color:rgba(255,255,255,0.3);border-color:#fff;color:#fff}body .x-btn.red-solid{background-color:#e51b24;border-color:#e51b24}body .x-btn.red-solid:hover{background-color:#00466a;border-color:#00466a}body .x-btn.blue-solid{background-color:#00466a;border-color:#00466a}body .x-btn.blue-solid:hover{background-color:#00a94e;border-color:#00a94e}body .x-btn.hover-red:hover,body .x-btn.hover-red:focus{background-color:#e51b24;border-color:#e51b24}body .x-btn.hover-green:hover,body .x-btn.hover-green:focus{background-color:#00a94e;border-color:#00a94e}body .x-btn.hover-blue:hover,body .x-btn.hover-blue:focus{background-color:#00466a;border-color:#00466a}body .gform_wrapper input[type=text],body .gform_wrapper input[type=url],body .gform_wrapper input[type=email],body .gform_wrapper input[type=tel],body .gform_wrapper input[type=number],body .gform_wrapper input[type=password],body .gform_wrapper select,body .gform_wrapper textarea,body .gform_wrapper .gfield_radio li label,body .gform_wrapper .gfield_checkbox li label{font-size:18px !important}body .gform_wrapper .ginput_complex label,body .gform_wrapper .description,body .gform_wrapper .gfield_description,body .gform_wrapper .gsection_description,body .gform_wrapper .instruction{font-size:80% !important;opacity:1 !important}body .gform_wrapper .gfield_radio label{margin-top:.4em}@media (max-width: 479px){.x-block-grid.two-up>li:nth-child(2n+1){clear:none}.x-block-grid.two-up>li{width:100%}}.x-section .x-container.max.width.marginless-columns{width:65%}@media (max-width: 479px){.x-section .x-container.max.width.marginless-columns{width:90%}}@media (max-width: 978px){body .x-container.width{width:90%}.x-column.x-sm{float:none;width:100%;margin-right:0}}
+/*
+ * => MAIN.SCSS
+ * => Author: William Cobb <hello@bigwilliam.com>
+ * => Date: January 2016
+ * ---------------------------------------------------------------------------*/
+/*
+ * => FONTS. Declare font families here. To set font styles, try _global.scss
+ * ---------------------------------------------------------------------------*/
+/*
+ * => FONT VARS
+ * ---------------------------------------------------------------------------*/
+/*
+ * => COLOR VARS & MIXINS
+ * ---------------------------------------------------------------------------*/
+/* Set the main site colors here */
+/*
+ * => CONTAINERS AND WIDTHS
+ * ---------------------------------------------------------------------------*/
+/*
+ * => MEDIA BREAKPOINTS
+ * ---------------------------------------------------------------------------*/
+/*
+ * => DEBUG
+ * ---------------------------------------------------------------------------*/
+@debug-map {
+  __toString__: ("white": #ffffff, "orange": #ff6633, "green": #339933, "blue": #006699, "gray": #333333);
+  __length__: 5;
+  __depth__: depth(("white": #ffffff, "orange": #ff6633, "green": #339933, "blue": #006699, "gray": #333333));
+  __keys__: "white", "orange", "green", "blue", "gray";
+  /* line 94, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_variables.scss */
+  __properties__ {
+    (color) white: #ffffff;
+    (color) orange: #ff6633;
+    (color) green: #339933;
+    (color) blue: #006699;
+    (color) gray: #333333; } }
 
-/*# sourceMappingURL=main.css.map */
+/*
+ * => GLOBAL ELEMENTS STYLES
+ * ---------------------------------------------------------------------------*/
+/* line 5, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+html {
+  font-size: 14px;
+  -ms-text-size-adjust: 14px;
+  -webkit-text-size-adjust: auto; }
+  @media (min-width: 481px) {
+    /* line 5, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+    html {
+      font-size: 16px;
+      -ms-text-size-adjust: 16px; } }
+  @media (min-width: 768px) {
+    /* line 5, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+    html {
+      font-size: 18px;
+      -ms-text-size-adjust: 18px; } }
+
+/* line 23, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+body .entry-header,
+body .entry-content {
+  font-size: 10px;
+  font-size: 1rem; }
+
+/* line 29, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+body h1, body .h1,
+body h2, body .h2,
+body h3, body .h3,
+body h4, body .h4,
+body h5, body .h5,
+body h6, body .h6 {
+  font-family: "TrajanPro", serif; }
+
+/* line 38, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+body h1, body .h1 {
+  font-size: 15px;
+  font-size: 1.5rem; }
+
+/* line 39, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+body h2, body .h2 {
+  font-size: 13px;
+  font-size: 1.3rem; }
+
+/* line 40, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+body h3, body .h3 {
+  font-size: 11px;
+  font-size: 1.1rem; }
+
+/* line 41, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+body h4, body .h4 {
+  font-size: 9px;
+  font-size: 0.9rem; }
+
+/* line 42, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+body h5, body .h5 {
+  font-size: 7px;
+  font-size: 0.7rem; }
+
+/* line 43, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+body h6, body .h6 {
+  font-size: 5px;
+  font-size: 0.5rem; }
+
+@media (min-width: 481px) {
+  /* line 46, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h1, body .h1 {
+    font-size: 20px;
+    font-size: 2rem; }
+  /* line 47, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h2, body .h2 {
+    font-size: 18px;
+    font-size: 1.8rem; }
+  /* line 48, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h3, body .h3 {
+    font-size: 14px;
+    font-size: 1.4rem; }
+  /* line 49, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h4, body .h4 {
+    font-size: 12px;
+    font-size: 1.2rem; }
+  /* line 50, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h5, body .h5 {
+    font-size: 10px;
+    font-size: 1rem; }
+  /* line 51, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h6, body .h6 {
+    font-size: 8px;
+    font-size: 0.8rem; } }
+
+@media (min-width: 769px) {
+  /* line 55, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h1, body .h1 {
+    font-size: 25px;
+    font-size: 2.5rem; }
+  /* line 56, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h2, body .h2 {
+    font-size: 21px;
+    font-size: 2.1rem; }
+  /* line 57, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h3, body .h3 {
+    font-size: 18px;
+    font-size: 1.8rem; }
+  /* line 58, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h4, body .h4 {
+    font-size: 15px;
+    font-size: 1.5rem; }
+  /* line 59, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h5, body .h5 {
+    font-size: 10px;
+    font-size: 1rem; }
+  /* line 60, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_global.scss */
+  body h6, body .h6 {
+    font-size: 8px;
+    font-size: 0.8rem; } }
+
+/*
+ * => TEXT AND BG CLASSES
+ * ---------------------------------------------------------------------------*/
+/* line 6, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.text-white {
+  color: #ffffff; }
+  /* line 8, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .text-white p,
+  .text-white h1, .text-white .h1,
+  .text-white h2, .text-white .h2,
+  .text-white h3, .text-white .h3,
+  .text-white h4, .text-white .h4,
+  .text-white h5, .text-white .h5,
+  .text-white h6, .text-white .h6 {
+    color: #ffffff; }
+
+/* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.bg-white {
+  background-color: #ffffff; }
+
+/* line 6, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.text-orange {
+  color: #ff6633; }
+  /* line 8, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .text-orange p,
+  .text-orange h1, .text-orange .h1,
+  .text-orange h2, .text-orange .h2,
+  .text-orange h3, .text-orange .h3,
+  .text-orange h4, .text-orange .h4,
+  .text-orange h5, .text-orange .h5,
+  .text-orange h6, .text-orange .h6 {
+    color: #ff6633; }
+
+/* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.bg-orange {
+  background-color: #ff6633; }
+
+/* line 6, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.text-green {
+  color: #339933; }
+  /* line 8, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .text-green p,
+  .text-green h1, .text-green .h1,
+  .text-green h2, .text-green .h2,
+  .text-green h3, .text-green .h3,
+  .text-green h4, .text-green .h4,
+  .text-green h5, .text-green .h5,
+  .text-green h6, .text-green .h6 {
+    color: #339933; }
+
+/* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.bg-green {
+  background-color: #339933; }
+
+/* line 6, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.text-blue {
+  color: #006699; }
+  /* line 8, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .text-blue p,
+  .text-blue h1, .text-blue .h1,
+  .text-blue h2, .text-blue .h2,
+  .text-blue h3, .text-blue .h3,
+  .text-blue h4, .text-blue .h4,
+  .text-blue h5, .text-blue .h5,
+  .text-blue h6, .text-blue .h6 {
+    color: #006699; }
+
+/* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.bg-blue {
+  background-color: #006699; }
+
+/* line 6, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.text-gray {
+  color: #333333; }
+  /* line 8, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .text-gray p,
+  .text-gray h1, .text-gray .h1,
+  .text-gray h2, .text-gray .h2,
+  .text-gray h3, .text-gray .h3,
+  .text-gray h4, .text-gray .h4,
+  .text-gray h5, .text-gray .h5,
+  .text-gray h6, .text-gray .h6 {
+    color: #333333; }
+
+/* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.bg-gray {
+  background-color: #333333; }
+
+/*
+ * => FIXES FOR FIREFOX
+ * ---------------------------------------------------------------------------*/
+@-moz-document url-prefix() {
+  /* line 38, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  img.foxfix,
+  .foxfix > img {
+    width: 100%;
+    max-width: 100%; } }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 46, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  img.foxfix,
+  .foxfix > img {
+    max-width: 100%; } }
+
+/*
+ * => HELPER CLASSES
+ * ---------------------------------------------------------------------------*/
+/* line 62, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.margin-top-0 {
+  margin-top: 0; }
+
+/* line 63, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.margin-bottom-0 {
+  margin-bottom: 0; }
+
+/* line 64, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.margin-0 {
+  margin: 0; }
+
+/* line 68, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.line {
+  border-bottom: 2px solid #444;
+  max-width: 100%;
+  margin: auto; }
+  /* line 73, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .line.small {
+    width: 500px; }
+  /* line 77, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .line.medium {
+    width: 950px; }
+  /* line 81, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .line.white {
+    border-color: #fff; }
+
+/* line 88, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.valign-middle,
+.vertical-middle,
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+
+/* line 98, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.bounce {
+  animation: bounce 1s 2s infinite ease-in-out;
+  position: relative; }
+
+/* line 102, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.bounce-hover {
+  animation: bounce 1s 2s infinite ease-in-out;
+  position: relative; }
+
+@keyframes bounce {
+  0% {
+    top: 0; }
+  40% { }
+  50% {
+    top: 10px; }
+  55% {
+    top: 20px; }
+  65% {
+    top: 10px; }
+  95% {
+    top: 0; }
+  100% {
+    top: 0; } }
+
+/* line 118, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.tilt {
+  transition: all .2s ease-in-out; }
+
+/* line 121, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.tilt:hover {
+  -ms-transform: rotate(7deg);
+  /* IE 9 */
+  -webkit-transform: rotate(7deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(7deg); }
+
+/* line 129, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.grow {
+  transition: all .2s ease-in-out; }
+
+/* line 132, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.grow:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+/* line 139, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.hover-effect:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+
+/*
+ * => MOBILE HELPERS & FIXES
+ * ---------------------------------------------------------------------------*/
+@media (max-width: 766px) {
+  /* line 151, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .mobile-block {
+    display: block;
+    margin: 1em auto !important;
+    float: none !important;
+    width: 90%; } }
+
+@media (max-width: 479px) {
+  /* line 163, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .mobile-wide {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 auto !important; }
+  /* line 168, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .mobile-center {
+    text-align: center !important; }
+  /* line 171, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .mobile-left {
+    text-align: left !important; }
+  /* line 176, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .x-feature-box-graphic {
+    display: block !important;
+    width: 45px;
+    margin: 1em auto; }
+  /* line 181, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .x-feature-box-content {
+    text-align: center; }
+  /* line 185, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .mobile-hide {
+    display: none !important; } }
+
+/* CONTROL COLUMN BREAKPOINTS FOR BECOMING FULL-WIDTH */
+/* APPLY THESE CLASSES TO THE ROW */
+/* medium: 768px - 979px */
+@media (max-width: 1199px) {
+  /* line 198, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .column-block-medium .x-column.x-sm {
+    float: none;
+    width: 100%;
+    margin-right: 0; } }
+
+/* Large: 980px - 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* line 209, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .column-block-large .x-column.x-sm {
+    float: none;
+    width: 100%;
+    margin-right: 0; } }
+
+/*
+ * => LayerSlider Mods and Fixes
+ * ---------------------------------------------------------------------------*/
+/* line 223, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.ls-container .x-btn {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important; }
+
+/*
+ * => 'Read More' Link (see readmore package in assets/js/vendor/ )
+ * ---------------------------------------------------------------------------*/
+/* line 237, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+.read-more-link,
+.read-less-link {
+  color: #990000;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 0; }
+
+/*
+ * => WORDPRESS CLASSES
+ * ---------------------------------------------------------------------------*/
+@media (max-width: 479px) {
+  /* line 256, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_helpers.scss */
+  .alignright,
+  .alignleft {
+    float: none;
+    margin: .5em auto;
+    display: block; } }
+
+/*
+ * => GRID BLOCK ITEM (CORNERSTONE)
+ * ---------------------------------------------------------------------------*/
+@media (max-width: 479px) {
+  /* line 10, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_x_overrides.scss */
+  .x-block-grid.two-up > li:nth-child(2n+1) {
+    clear: none; }
+  /* line 13, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_x_overrides.scss */
+  .x-block-grid.two-up > li {
+    width: 100%; } }
+
+/*
+ * => Containers and Layout Fixes
+ * ---------------------------------------------------------------------------*/
+/* line 27, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_x_overrides.scss */
+.x-section .x-container.max.width.marginless-columns {
+  width: 65%; }
+
+@media (max-width: 479px) {
+  /* line 36, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_x_overrides.scss */
+  .x-section .x-container.max.width.marginless-columns {
+    width: 90%; } }
+
+@media (max-width: 978px) {
+  /* line 46, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_x_overrides.scss */
+  body .x-container.width {
+    width: 90%; }
+  /* line 52, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/common/_x_overrides.scss */
+  .x-column.x-sm {
+    float: none;
+    width: 100%;
+    margin-right: 0; } }
+
+/*
+ * => BUTTON MIXINS
+ * ---------------------------------------------------------------------------*/
+/*
+ * => BUTTON STYLES
+ * ---------------------------------------------------------------------------*/
+/* line 45, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn {
+  font-weight: bold; }
+
+/* line 9, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.white-transparent {
+  background-color: #fff;
+  color: #ffffff;
+  border-width: 2px;
+  font-weight: bold; }
+  /* line 14, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+  body .x-btn.white-transparent:hover, body .x-btn.white-transparent:focus {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #fff; }
+
+/* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.white-solid {
+  background-color: #ffffff;
+  border-color: #ffffff; }
+  /* line 25, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+  body .x-btn.white-solid:hover, body .x-btn.white-solid:focus {
+    background-color: #f2f2f2; }
+
+/* line 32, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.hover-white:hover, body .x-btn.hover-white:focus {
+  background-color: #ffffff;
+  border-color: #ffffff; }
+
+/* line 9, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.orange-transparent {
+  background-color: #fff;
+  color: #ff6633;
+  border-width: 2px;
+  font-weight: bold; }
+  /* line 14, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+  body .x-btn.orange-transparent:hover, body .x-btn.orange-transparent:focus {
+    background-color: #ff6633;
+    border-color: #ff6633;
+    color: #fff; }
+
+/* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.orange-solid {
+  background-color: #ff6633;
+  border-color: #ff6633; }
+  /* line 25, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+  body .x-btn.orange-solid:hover, body .x-btn.orange-solid:focus {
+    background-color: #ff531a; }
+
+/* line 32, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.hover-orange:hover, body .x-btn.hover-orange:focus {
+  background-color: #ff6633;
+  border-color: #ff6633; }
+
+/* line 9, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.green-transparent {
+  background-color: #fff;
+  color: #339933;
+  border-width: 2px;
+  font-weight: bold; }
+  /* line 14, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+  body .x-btn.green-transparent:hover, body .x-btn.green-transparent:focus {
+    background-color: #339933;
+    border-color: #339933;
+    color: #fff; }
+
+/* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.green-solid {
+  background-color: #339933;
+  border-color: #339933; }
+  /* line 25, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+  body .x-btn.green-solid:hover, body .x-btn.green-solid:focus {
+    background-color: #2d862d; }
+
+/* line 32, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.hover-green:hover, body .x-btn.hover-green:focus {
+  background-color: #339933;
+  border-color: #339933; }
+
+/* line 9, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.blue-transparent {
+  background-color: #fff;
+  color: #006699;
+  border-width: 2px;
+  font-weight: bold; }
+  /* line 14, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+  body .x-btn.blue-transparent:hover, body .x-btn.blue-transparent:focus {
+    background-color: #006699;
+    border-color: #006699;
+    color: #fff; }
+
+/* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.blue-solid {
+  background-color: #006699;
+  border-color: #006699; }
+  /* line 25, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+  body .x-btn.blue-solid:hover, body .x-btn.blue-solid:focus {
+    background-color: #005580; }
+
+/* line 32, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.hover-blue:hover, body .x-btn.hover-blue:focus {
+  background-color: #006699;
+  border-color: #006699; }
+
+/* line 9, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.gray-transparent {
+  background-color: #fff;
+  color: #333333;
+  border-width: 2px;
+  font-weight: bold; }
+  /* line 14, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+  body .x-btn.gray-transparent:hover, body .x-btn.gray-transparent:focus {
+    background-color: #333333;
+    border-color: #333333;
+    color: #fff; }
+
+/* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.gray-solid {
+  background-color: #333333;
+  border-color: #333333; }
+  /* line 25, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+  body .x-btn.gray-solid:hover, body .x-btn.gray-solid:focus {
+    background-color: #262626; }
+
+/* line 32, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
+body .x-btn.hover-gray:hover, body .x-btn.hover-gray:focus {
+  background-color: #333333;
+  border-color: #333333; }
+
+/*
+ * => GRAVITY FORMS
+ * ---------------------------------------------------------------------------*/
+/* line 5, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_forms.scss */
+body .gform_wrapper input[type=text],
+body .gform_wrapper input[type=url],
+body .gform_wrapper input[type=email],
+body .gform_wrapper input[type=tel],
+body .gform_wrapper input[type=number],
+body .gform_wrapper input[type=password],
+body .gform_wrapper select,
+body .gform_wrapper textarea,
+body .gform_wrapper .gfield_radio li label,
+body .gform_wrapper .gfield_checkbox li label {
+  font-size: 18px !important; }
+
+/* line 18, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_forms.scss */
+body .gform_wrapper .ginput_complex label,
+body .gform_wrapper .description,
+body .gform_wrapper .gfield_description,
+body .gform_wrapper .gsection_description,
+body .gform_wrapper .instruction {
+  font-size: 80% !important;
+  opacity: 1 !important; }
+
+/* line 34, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_forms.scss */
+body .gform_wrapper .gfield_radio label {
+  margin-top: .4em; }
+
+/*
+ * => CORNERSTONE: Import cornerstone styles here. Useful if you aren't
+                   enqueueing the theme scripts. Probably won't be needed
+                   once CS is a standalone plugin.
+ * ---------------------------------------------------------------------------*/
+/*
+ * => HEADER
+ * ---------------------------------------------------------------------------*/
+@media (max-width: 479px) {
+  /* line 7, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/layouts/_header.scss */
+  .x-brand {
+    display: block;
+    margin: 1em auto; } }
+
+/*
+ * => NAV, NAV BUTTONS, & SUBNAV RESPONSIVE
+ * ---------------------------------------------------------------------------*/
+/*
+ * => FOOTER
+ * ---------------------------------------------------------------------------*/

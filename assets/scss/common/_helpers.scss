@@ -1,4 +1,36 @@
 /*
+ * => TEXT AND BG CLASSES
+ * ---------------------------------------------------------------------------*/
+// Text Colors
+@mixin text-color($name, $value) {
+	.text-#{$name} {
+		color: $value;
+		p,
+		h1, .h1,
+		h2, .h2,
+		h3, .h3,
+		h4, .h4,
+		h5, .h5,
+		h6, .h6 {
+			color: $value;
+		}
+	}
+}
+
+// Background Colors
+@mixin bg-color($name, $value) {
+	.bg-#{$name} {
+		background-color: $value;
+	}
+}
+
+// build .text-color and .bg-color classes
+@each $name, $value in $mainColors {
+  @include text-color($name, $value);
+  @include bg-color($name, $value);
+}
+
+/*
  * => FIXES FOR FIREFOX
  * ---------------------------------------------------------------------------*/
 
@@ -24,12 +56,6 @@
  * => HELPER CLASSES
  * ---------------------------------------------------------------------------*/
 
-
-// build .text-color and .bg-color classes
-@each $name, $value in $colors {
-  @include text-color($name, $value);
-  @include bg-color($name, $value);
-}
 
 // Margins
 
@@ -210,7 +236,7 @@
  * ---------------------------------------------------------------------------*/
 .read-more-link,
 .read-less-link {
-	color: $colors(red);
+	color: #990000;
 	// margin-top: 1em;
 	font-weight: bold;
 	text-transform: uppercase;
