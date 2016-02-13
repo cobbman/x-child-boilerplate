@@ -1,0 +1,200 @@
+/*
+
+Theme Name: Handcoded &ndash; Child of X Theme
+Theme URI: http://handcoded.ca/themes/handcoded-x
+Author: Rob Golbeck, Handcoded Web Services
+Author URI: http://handcoded.ca
+Description: Make all of your modifications to X in this child theme.
+Version: 1.0.0
+Template: x
+
+*/
+
+
+/*= Header
+ ========================= */
+/* Masthead Stacked */
+.masthead-stacked #hc-sitetitle,
+.masthead-stacked #hc-headercontent {
+	display: inline-block;
+	width: 49%;
+	text-align: left;
+}
+.masthead-stacked #hc-headercontent {
+	text-align: right;
+}
+.masthead-stacked .desktop .x-nav {
+	margin-right: 0;
+	margin-left: 0;
+}
+/* Masthead Inline */
+.masthead-inline #hc-sitetitle {
+	float: left;
+}
+.masthead-inline #hc-headercontent {
+	display: block;
+	float: left;
+	clear: left;
+	margin-top: 0.625em;
+}
+.masthead div.x-navbar-fixed-left #hc-sitetitle,
+.masthead div.x-navbar-fixed-right #hc-sitetitle,
+.masthead div.x-navbar-fixed-left #hc-headercontent,
+.masthead div.x-navbar-fixed-right #hc-headercontent {
+	display: block;
+	width: 90%;
+	margin: 0 5% 1.25em;
+	text-align: center;
+}
+.masthead div.x-navbar-fixed-left #hc-sitetitle a.x-brand,
+.masthead div.x-navbar-fixed-right #hc-sitetitle a.x-brand {
+	margin-right: 0;
+	margin-bottom: 0.3125em;
+	margin-left: 0;
+	text-align: center;
+}
+/* remove border & shadow from logobar, navbar and footer */
+div.x-logobar,
+div.x-navbar,
+footer.x-colophon {
+	border: none;
+	box-shadow: none;
+}
+/*= Footer
+ ========================= */
+/* increase the font size in the bottom footer */
+footer.x-colophon.bottom {
+	font-size: 93.75%;
+}
+/* align copyright statement left and footer content right */
+#hc-copyright,
+.x-colophon-content {
+	display: inline-block;
+	width: 49%;
+	text-align: left;
+}
+.x-colophon-content {
+	text-align: right;
+}
+
+/*= Navigation
+ ========================= */
+/* remove top border from nav items on hover & current menu item */
+div.x-navbar .desktop .x-nav > li > a:hover, 
+div.x-navbar .desktop .x-nav > .x-active > a, 
+div.x-navbar .desktop .x-nav > .current-menu-item > a {
+	box-shadow: none;
+}
+/* align drop down menu to be directly below parent item */
+.masthead-inline div.x-navbar .desktop .sub-menu {
+	left: 0;
+}
+/* remove box shadow from mobile nav button */
+a.x-btn-navbar,
+a.x-btn-navbar.collapsed,
+a.x-btn-navbar.collapsed:hover {
+	box-shadow: none;
+}
+/* change mobile nav background colour */
+.x-btn-navbar,
+.x-btn-navbar.collapsed,
+.x-btn-navbar.collapsed:hover {
+	background: transparent;
+}
+/* remove bars icon and replace it with "Menu" text */
+a.x-btn-navbar .x-icon-bars,
+a.x-btn-navbar.collapsed .x-icon-bars {
+	display: none;
+}
+a.x-btn-navbar.collapsed:before {
+	content: "Menu";
+	text-transform: lowercase;
+}
+/* insert 'X' for collapsing the mobile nav menu */
+a.x-btn-navbar:before {
+	content: "X";
+	text-transform: lowercase;
+}
+/* remove top margin from mobile nav */
+.x-navbar .mobile .x-nav {
+	margin-top: 0;
+}
+/*= Content
+ ========================= */
+/* remove shadows and borders, and reduce padding
+	 from content entry container */
+.entry-wrap {
+	padding: 60px 10px;
+	border-radius: 0;
+	box-shadow: none;
+}
+/* remove shadows and borders, and adjust margins and padding
+	 from content widgets */
+.widget ul,
+.widget ol {
+	border: none;
+	box-shadow: none;
+}
+.widget ul li a,
+.widget ol li a {
+	border-bottom: none;
+}
+.widget ul li,
+.widget ol li,
+.widget.widget_recent_entries li,
+.widget.widget_recent_comments li,
+.widget_nav_menu ul li a,
+.widget_meta ul li a,
+.widget_pages ul li a {
+	padding-right: 0;
+	padding-left: 0;
+	border: none;
+	box-shadow: none;
+}
+.x-icon .widget_categories ul>li a,
+.x-icon .widget_product_categories ul>li a,
+.x-icon .widget_nav_menu ul>li a,
+.x-icon .widget_pages ul>li a {
+	margin-right: 0;
+	margin-left: 0;
+}
+/* reset padding on widgets for icon stack */
+.x-icon .widget ul li,
+.x-icon .widget ol li {
+	padding-right: 21px;
+	padding-left: 21px;
+}
+
+/*= Responsive
+ ========================= */
+@media all and (max-width: 729px) {
+	.masthead-stacked #hc-sitetitle,
+	.masthead-stacked #hc-headercontent {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.masthead-inline div.x-navbar {
+		text-align: center;
+	}
+	.masthead-inline #hc-sitetitle,
+	.masthead-inline a.x-brand,
+	.masthead-inline .x-btn-navbar {
+		float: none;
+	}
+	.masthead-inline a.x-btn-navbar {
+		float: none;
+		display: inline-block;
+	}
+	.masthead-inline #hc-headercontent {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	#hc-copyright,
+	.x-colophon-content {
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}

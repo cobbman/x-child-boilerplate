@@ -1,23 +1,25 @@
 /*
- * => GENERAL CONTENT STYLES
+ * => GLOBAL ELEMENTS STYLES
  * ---------------------------------------------------------------------------*/
 
 html {
-  font-size: $basefontsize - 4;
-  -ms-text-size-adjust: $baseFontSize - 4;
+  font-size: $BaseFontSize - 4;
+  -ms-text-size-adjust: $BaseFontSize - 4;
   -webkit-text-size-adjust: auto;
 
   @include media('>phone') {
-    font-size: $basefontsize - 2;
-	  -ms-text-size-adjust: $baseFontSize - 2;
+    font-size: $BaseFontSize - 2;
+	  -ms-text-size-adjust: $BaseFontSize - 2;
   }
   @include media('>=ipadPortrait') {
-    font-size: $basefontsize;
-	  -ms-text-size-adjust: $baseFontSize;
+    font-size: $BaseFontSize;
+	  -ms-text-size-adjust: $BaseFontSize;
   }
 }
 
+// must wrap in body tag to override X defaults
 body {
+
 	.entry-header, 
 	.entry-content {
 		@include font-size(1); 
@@ -60,7 +62,7 @@ body {
 
 } // end body
 
-hr {
-	// border-color: $blue;
-}
+hr {}
+
+
 

@@ -1,0 +1,134 @@
+/*
+ * => FONT SIZE
+ * ---------------------------------------------------------------------------*/
+$BaseFontSize: 18px;
+$fontfamilybase: 'Open Sans', sans-serif;
+$fontfamilyalt: 'TrajanPro', serif;
+
+// Mixin for rem font size and fallback
+@mixin font-size($sizeValue: $BaseFontSize) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+
+/*
+ * => COLORS
+ * ---------------------------------------------------------------------------*/
+
+/* Set the main site colors here */
+$colors: (
+	white: #ffffff,
+	orange: #ff6633,
+	green: #339933,   
+	blue: #006699,       
+	gray: #333333
+);
+
+
+
+// Text Colors
+@mixin text-color($name, $value) {
+	.text-#{$name} {
+		color: $value;
+		p,
+		h1, .h1,
+		h2, .h2,
+		h3, .h3,
+		h4, .h4,
+		h5, .h5,
+		h6, .h6 {
+			color: $value;
+		}
+	}
+}
+
+// Background Colors
+@mixin bg-color($name, $value) {
+	.bg-#{$name} {
+		background-color: $value;
+	}
+}
+
+// return color value from given key
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+
+
+
+/*
+ * => BUTTONS
+ * ---------------------------------------------------------------------------*/
+@mixin createButton($name, $value) {
+	// transparent
+	.#{name}-transparent {
+		background-color: #fff;
+		color: $value;
+		border-width: 2px;
+		font-weight: bold;
+		&:hover,
+		&:focus {
+			background-color: $value;
+			border-color: $value;
+			color: #fff;
+		}
+	}
+	// solid
+	.#{$name}-solid {
+		background-color: $value;
+		border-color: $value;
+		&:hover,
+		&:focus {
+			background-color: darken($value, 5%);
+		}
+	}
+	// hover
+	.hover-#{$name} {
+		&:hover,
+		&:focus {
+			background-color: $value;
+			border-color: $value;
+		}
+	}
+}
+
+/*
+ * => CONTAINERS AND WIDTHS
+ * ---------------------------------------------------------------------------*/
+
+// Site Width -> match this with the value set in customizer under "Layout and Design > Site Width (%)"
+$sitewidth: 65%; 
+
+
+
+
+
+/*
+ * => MEDIA BREAKPOINTS
+ * ---------------------------------------------------------------------------*/
+
+// All media queries are in 'libraries/_include_media.scss'
+// It's quite an extensive tool, with support for retina Media Queries, etc.
+// How to use: http://include-media.com/#features
+
+$breakpoints: (
+  phone: 480px, 
+  tablet: 767px, 
+  tabletwide: 979px, 
+  desktop: 1200px,
+  ipadLandscape: 1024px,
+  ipadPortrait: 768px
+);
+// usage: 
+// @include media(">phone", "<=tablet") {
+//  width: 50%;
+// }
+
+
+// GRADIENTS: http://simbo.github.io/2014/03/less-gradient-mixins-with-unlimited-colorstops.html

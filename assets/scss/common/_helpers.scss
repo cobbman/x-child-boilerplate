@@ -24,84 +24,12 @@
  * => HELPER CLASSES
  * ---------------------------------------------------------------------------*/
 
-// Font Colors
 
-.white,
-.text-white {
-	color: #fff;
-
-	h1, .h1,
-	h2, .h2,
-	h3, .h3,
-	h4, .h4,
-	h5, .h5,
-	h6, .h6 {
-		color: #fff;
-	}
+// build .text-color and .bg-color classes
+@each $name, $value in $colors {
+  @include text-color($name, $value);
+  @include bg-color($name, $value);
 }
-
-.blue,
-.text-blue {
-	color: $blue2;
-
-	h1, .h1,
-	h2, .h2,
-	h3, .h3,
-	h4, .h4,
-	h5, .h5,
-	h6, .h6 {
-		color: $blue2;
-	}
-}
-
-.gray,
-.text-gray {
-	color: $gray;
-
-	h1, .h1,
-	h2, .h2,
-	h3, .h3,
-	h4, .h4,
-	h5, .h5,
-	h6, .h6 {
-		color: $gray;
-	}
-}
-
-.red,
-.text-red {
-	color: $red;
-
-	h1, .h1,
-	h2, .h2,
-	h3, .h3,
-	h4, .h4,
-	h5, .h5,
-	h6, .h6 {
-		color: $red;
-	}
-}
-
-.green,
-.text-green {
-	color: $green;
-
-	h1, .h1,
-	h2, .h2,
-	h3, .h3,
-	h4, .h4,
-	h5, .h5,
-	h6, .h6 {
-		color: $green;
-	}
-}
-
-// Background colors
-.bg-white { background-color: $white; }
-.bg-blue { background-color: $blue; }
-.bg-red { background-color: $red; }
-.bg-gray { background-color: $gray; }
-.bg-green { background-color: $green; }
 
 // Margins
 
@@ -112,7 +40,7 @@
 // lines (aka lines under headings)... <div class=line></div>
 
 .line {
-	border-bottom: 2px solid $blue; 
+	border-bottom: 2px solid #444; 
 	max-width: 100%;
 	margin: auto;
 
@@ -142,6 +70,10 @@
 
 // Bounce things
 .bounce {
+	animation: bounce 1s 2s infinite ease-in-out;
+	position: relative;
+}
+.bounce-hover {
 	animation: bounce 1s 2s infinite ease-in-out;
 	position: relative;
 }
@@ -188,8 +120,6 @@
  * ---------------------------------------------------------------------------*/
 
 // iPad (portrait and smaller)
-
-//@media screen and (max-width: @container-small) {
 @include media('<tablet') {
 
 	.mobile-block {
@@ -202,8 +132,6 @@
 }
 
 // Phones (portrait)
-
-//@media screen and (max-width: @container-xsmall) {
 @include media('<phone') {
 
 	.mobile-wide {
@@ -229,7 +157,7 @@
 	}
 
 	.mobile-hide {
-		display: none;
+		display: none !important;
 	}
 
 }
@@ -239,7 +167,6 @@
 
 
 /* medium: 768px - 979px */
-// @media ( max-width: @container-medium ) {
 @include media('<desktop') {
 
 	.column-block-medium .x-column.x-sm {
@@ -251,7 +178,6 @@
 }
 
 /* Large: 980px - 1199px */
-// @media ( min-width: @container-medium + 1 ) and ( max-width: @container-large ) {
 @include media('>tablet', '<desktop') {
 
 	.column-block-large .x-column.x-sm {
@@ -261,9 +187,6 @@
 	}
 
 }
-
-/* X-Large: 1200px and up (not needed, but it's here) */
-// @media ( min-width: @container-large + 1 ) {}
 
 
 /*
@@ -287,7 +210,7 @@
  * ---------------------------------------------------------------------------*/
 .read-more-link,
 .read-less-link {
-	color: $red;
+	color: $colors(red);
 	// margin-top: 1em;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -302,8 +225,6 @@
  * ---------------------------------------------------------------------------*/
 
 // Fix on mobile views
-
-// @media screen and (max-width: @container-small) {
 @include media ('<phone') {
 
 	.alignright,

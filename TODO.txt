@@ -1,0 +1,76 @@
+SHRINK THE NAVBAR ON SCROLL
+EXAMPLE: http://simplify.fm/
+
+.x-brand img {
+-webkit-transition:all 2s ease;
+transition:all .4s ease;
+height:50px;
+width:auto!important;
+/* margin-top: 5px;*/
+}
+
+.x-btn-navbar {
+-webkit-transition:all 2s ease;
+transition:all .4s ease;
+margin-top:24px;
+}
+
+.x-brand {
+font-size:12px;
+-webkit-transition:all 2s ease;
+transition:all .4s ease;
+margin-top:22px;
+}
+
+.x-navbar .desktop .x-nav > li > a {
+-webkit-transition:all 2s ease;
+transition:all .4s ease;
+padding-top:37px;
+}
+
+.x-navbar .desktop .x-nav > li ul {
+top:80px;
+}
+
+.shrink .x-btn-navbar {
+margin-top:14px;
+}
+
+.shrink.x-navbar .desktop .x-nav > li > a {
+padding-top:21px;
+height:40px;
+}
+
+.shrink.x-navbar .desktop .x-nav > li ul {
+top:60px;
+}
+
+.shrink .x-navbar-inner {
+min-height:50px;
+}
+
+.shrink .x-brand {
+margin-top:0;
+}
+
+.shrink .x-brand img {
+height:40px;
+}
+
+JAVASCRIPT: (Added to functions.php file)
+/* SHRINK THE NAVBAR ================================================= */
+
+function navbarShrink(){ ?>
+<script type="text/javascript">
+jQuery(window).scroll(function() {
+if (jQuery(document).scrollTop() > 90) {
+jQuery('.x-navbar').addClass('shrink');
+}
+else {
+jQuery('.x-navbar').removeClass('shrink');
+}
+});
+</script>
+<?php
+}
+add_action("wp_head", "navbarShrink");
