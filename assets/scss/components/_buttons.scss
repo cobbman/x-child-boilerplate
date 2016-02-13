@@ -6,7 +6,7 @@
 	body .x-btn {
 
 		// transparent
-		&.#{$name}-transparent {
+		&.transparent-#{$name} {
 			background-color: #fff;
 			color: $value;
 			border-width: 2px;
@@ -19,7 +19,7 @@
 			}
 		}
 		// solid
-		&.#{$name}-solid {
+		&.solid-#{$name} {
 			background-color: $value;
 			border-color: $value;
 			&:hover,

@@ -475,23 +475,23 @@ body .x-btn {
   font-weight: bold; }
 
 /* line 9, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-body .x-btn.white-transparent {
+body .x-btn.transparent-white {
   background-color: #fff;
   color: #ffffff;
   border-width: 2px;
   font-weight: bold; }
   /* line 14, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-  body .x-btn.white-transparent:hover, body .x-btn.white-transparent:focus {
+  body .x-btn.transparent-white:hover, body .x-btn.transparent-white:focus {
     background-color: #ffffff;
     border-color: #ffffff;
     color: #fff; }
 
 /* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-body .x-btn.white-solid {
+body .x-btn.solid-white {
   background-color: #ffffff;
   border-color: #ffffff; }
   /* line 25, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-  body .x-btn.white-solid:hover, body .x-btn.white-solid:focus {
+  body .x-btn.solid-white:hover, body .x-btn.solid-white:focus {
     background-color: #f2f2f2; }
 
 /* line 32, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
@@ -500,23 +500,23 @@ body .x-btn.hover-white:hover, body .x-btn.hover-white:focus {
   border-color: #ffffff; }
 
 /* line 9, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-body .x-btn.orange-transparent {
+body .x-btn.transparent-orange {
   background-color: #fff;
   color: #ff6633;
   border-width: 2px;
   font-weight: bold; }
   /* line 14, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-  body .x-btn.orange-transparent:hover, body .x-btn.orange-transparent:focus {
+  body .x-btn.transparent-orange:hover, body .x-btn.transparent-orange:focus {
     background-color: #ff6633;
     border-color: #ff6633;
     color: #fff; }
 
 /* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-body .x-btn.orange-solid {
+body .x-btn.solid-orange {
   background-color: #ff6633;
   border-color: #ff6633; }
   /* line 25, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-  body .x-btn.orange-solid:hover, body .x-btn.orange-solid:focus {
+  body .x-btn.solid-orange:hover, body .x-btn.solid-orange:focus {
     background-color: #ff531a; }
 
 /* line 32, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
@@ -525,23 +525,23 @@ body .x-btn.hover-orange:hover, body .x-btn.hover-orange:focus {
   border-color: #ff6633; }
 
 /* line 9, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-body .x-btn.green-transparent {
+body .x-btn.transparent-green {
   background-color: #fff;
   color: #339933;
   border-width: 2px;
   font-weight: bold; }
   /* line 14, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-  body .x-btn.green-transparent:hover, body .x-btn.green-transparent:focus {
+  body .x-btn.transparent-green:hover, body .x-btn.transparent-green:focus {
     background-color: #339933;
     border-color: #339933;
     color: #fff; }
 
 /* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-body .x-btn.green-solid {
+body .x-btn.solid-green {
   background-color: #339933;
   border-color: #339933; }
   /* line 25, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-  body .x-btn.green-solid:hover, body .x-btn.green-solid:focus {
+  body .x-btn.solid-green:hover, body .x-btn.solid-green:focus {
     background-color: #2d862d; }
 
 /* line 32, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
@@ -550,23 +550,23 @@ body .x-btn.hover-green:hover, body .x-btn.hover-green:focus {
   border-color: #339933; }
 
 /* line 9, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-body .x-btn.blue-transparent {
+body .x-btn.transparent-blue {
   background-color: #fff;
   color: #006699;
   border-width: 2px;
   font-weight: bold; }
   /* line 14, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-  body .x-btn.blue-transparent:hover, body .x-btn.blue-transparent:focus {
+  body .x-btn.transparent-blue:hover, body .x-btn.transparent-blue:focus {
     background-color: #006699;
     border-color: #006699;
     color: #fff; }
 
 /* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-body .x-btn.blue-solid {
+body .x-btn.solid-blue {
   background-color: #006699;
   border-color: #006699; }
   /* line 25, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-  body .x-btn.blue-solid:hover, body .x-btn.blue-solid:focus {
+  body .x-btn.solid-blue:hover, body .x-btn.solid-blue:focus {
     background-color: #005580; }
 
 /* line 32, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
@@ -575,23 +575,23 @@ body .x-btn.hover-blue:hover, body .x-btn.hover-blue:focus {
   border-color: #006699; }
 
 /* line 9, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-body .x-btn.gray-transparent {
+body .x-btn.transparent-gray {
   background-color: #fff;
   color: #333333;
   border-width: 2px;
   font-weight: bold; }
   /* line 14, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-  body .x-btn.gray-transparent:hover, body .x-btn.gray-transparent:focus {
+  body .x-btn.transparent-gray:hover, body .x-btn.transparent-gray:focus {
     background-color: #333333;
     border-color: #333333;
     color: #fff; }
 
 /* line 22, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-body .x-btn.gray-solid {
+body .x-btn.solid-gray {
   background-color: #333333;
   border-color: #333333; }
   /* line 25, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
-  body .x-btn.gray-solid:hover, body .x-btn.gray-solid:focus {
+  body .x-btn.solid-gray:hover, body .x-btn.solid-gray:focus {
     background-color: #262626; }
 
 /* line 32, /Users/bigwilliam/Projects/WordPress/x-child-boilerplate/assets/scss/components/_buttons.scss */
