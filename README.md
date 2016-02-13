@@ -20,7 +20,7 @@ currently need *live reload* plugin for your browser for css injection to work
 When it is time to launch, run `gulp build` and your assets will be minified for you
 
 ### Helper Classes
-This theme automatically generates some helper classes for you. To use them, first set your mainColors in **assets/scss/common/_variables.scss**. Then you can use things like this in your theme:
+This theme automatically generates some helper classes for you. To use them, first set your $mainColors array map in **assets/scss/common/_variables.scss**. Then you can use things like this in your theme:
 
 `<section class="text-white bg-blue"> blah blah blah </section>`
 
