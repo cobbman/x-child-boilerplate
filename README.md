@@ -10,7 +10,8 @@ Must run alongside parent theme 'X' - purchase license on Themeforest
 
 
 ### Setting up
-In your terminal, run
+
+In your terminal, run:
 
 	1. `npm install`
 	2. `gulp watch`
