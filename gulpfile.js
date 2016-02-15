@@ -1,3 +1,8 @@
+/*
+ * Author: William Cobb <hello@bigwilliam.com>
+ * @william_cobb
+ */
+ 
 // TODO: 
 // image optimization
 // JS minify and lint
