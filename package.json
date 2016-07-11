@@ -1,9 +1,9 @@
 {
   "name": "x-child-boilerplate",
   "version": "1.0.0",
-  "author": "William Cobb <hello@bigwilliam.com>",
-  "homepage": "http://bigwilliam.com",
-  "description": "X Theme Child Theme with changes I use in every site (mostly)",
+  "author": "William Cobb <william@d3fy.com>",
+  "homepage": "http://d3fy.com",
+  "description": "X Child Theme for WordPress",
   "private": true,
   "license": "ISC",
   "devDependencies": {
