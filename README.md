@@ -16,7 +16,7 @@ In your terminal, run:
 	1. `npm install`
 	2. `gulp watch`
 
-Currently need *live reload* plugin for your browser for css injection to work [https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en]{}
+Currently need *live reload* plugin for your browser for css injection to work [https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en]()
 
 When it is time to launch, run `gulp build` and your assets will be minified for you
 
