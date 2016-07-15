@@ -5,7 +5,8 @@ Author: William <william@d3fy.com>
 Must run alongside parent theme 'X' - purchase license on Themeforest
 
 ### Dependencies
-- Node.js - [https://nodejs.org/en/]()
+- Node.js - [https://nodejs.org/en/](https://nodejs.org/en/)
+- Gulp - `npm install --global gulp-cli` [See gulp project on Github](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md)
 - LiveReload Browser Plugin - [https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)
 
 
